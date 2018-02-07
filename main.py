@@ -49,3 +49,9 @@ b = 5 + (aspect_sen_pos + aspect_cos_pos)
 ##Calculo de Ae, area especifica de captacion
 a_e = a / b
 
+
+##Calculo de la pendiente en grados
+
+gdal.DEMProcessing('splope.tif', 'fill_mde.tif', 'slope')
+#Como me volvio a generar un tif sin nada, reinicie el nucleo poniendo 'exit' en la terminal
+
