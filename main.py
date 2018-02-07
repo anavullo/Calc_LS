@@ -78,12 +78,12 @@ profile = mde.profile #Me quedo con las configuraciones de fill_mde
  #Abriendo un fichero para escribir con ese perfil
 
 capa_ls =  rasterio.open('capa_ls.tif', 'w', **profile) 
- #Nombre de archivo de salida, configuro para que pueda editar el fichero,
- #Tengo que especificarle un monton de cosas, ancho, alto, etc. Por eso, pongo
- #el **profile, que lo que hace es copiarme esas caracteristicas y ponerlas
- #a mi nuevo raster de salida.
+#Nombre de archivo de salida, configuro para que pueda editar el fichero,
+#Tengo que especificarle un monton de cosas, ancho, alto, etc. Por eso, pongo
+#el **profile, que lo que hace es copiarme esas caracteristicas y ponerlas
+#a mi nuevo raster de salida.
  
- #Como me volvio a generar un tif sin nada, reinicie el nucleo poniendo 'exit' en la terminal
+#Como me volvio a generar un tif sin nada, reinicie el nucleo poniendo 'exit' en la terminal
  
 capa_ls.write(ls, 1)
 capa_ls.close()
