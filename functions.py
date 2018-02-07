@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  7 16:29:27 2018
+import rasterio
 
-@author: Usuario
-"""
-
+flow_acc = rasterio.open('flowacc.tif')
