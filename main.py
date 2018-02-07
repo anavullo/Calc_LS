@@ -1,5 +1,6 @@
 import functions #Importo el fichero con las funciones
 import gdal
+import numpy as np
 
 flow_acc = functions.cargar_raster('flowacc.tif') 
 #Llamo desde el fichero 'functions' a mi funcion 'cargar_raster', 
@@ -25,6 +26,13 @@ a = flow_acc * lado**2 #Con dos * es la potencia
 
 gdal.DEMProcessing('aspect.tif', 'fill_mde.tif', 'aspect') 
 #Nombre de archivo de salida, nombre archivo de entrada, calculo que quiero
+
+
+#Cargo aspect y la paso a radianes
+#Puede tirar error de que no tiene nada, entonces hay que reiniciar el nucleo
+
+aspect = fn.cargar_raster('aspect.tif') 
+aspect_rad = aspect * np.pi/180
 
 
 
