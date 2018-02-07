@@ -23,7 +23,7 @@ a = flow_acc * lado**2 #Con dos * es la potencia
 
 #Tengo que generar una capa (aspect), para el calculo de b
 
-gdal.DEMProcessing('aspect.tf', 'fill_mde.tif', 'aspect') 
+gdal.DEMProcessing('aspect.tif', 'fill_mde.tif', 'aspect') 
 #Nombre de archivo de salida, nombre archivo de entrada, calculo que quiero
 
 
