@@ -42,5 +42,10 @@ aspect_cos = np.cos(aspect_rad)
 aspect_sen_pos = np.abs (aspect_sen) #Al querer solo valores positivos
 aspect_cos_pos = np.abs (aspect_cos)
 
+#Calculo final de b
 
+b = 5 + (aspect_sen_pos + aspect_cos_pos)
+
+##Calculo de Ae, area especifica de captacion
+a_e = a / b
 
