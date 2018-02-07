@@ -63,6 +63,9 @@ slope_sen = np.sin (slope_rad)
 
 
 ##Con todo calculado, generamos LS, que es nuestro objetivo
- ls = ( 0.4 + 1 ) * (a_e / 22.13) ** 0.4 * (slope_sen / 0.896) ** 1
+m = 0.4
+n = 1
+
+ ls = ( m + 1 ) * (a_e / 22.13) ** m * (slope_sen / 0.896) ** n
 
 
