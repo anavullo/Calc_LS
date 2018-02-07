@@ -55,3 +55,9 @@ a_e = a / b
 gdal.DEMProcessing('splope.tif', 'fill_mde.tif', 'slope')
 #Como me volvio a generar un tif sin nada, reinicie el nucleo poniendo 'exit' en la terminal
 
+#Pasamos a radianes
+
+slope = fn.cargar_raster('splope.tif')
+slope_rad = slope * np.pi/180
+slope_sen = np.sin (slope_rad)
+
