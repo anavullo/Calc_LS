@@ -61,3 +61,8 @@ slope = fn.cargar_raster('splope.tif')
 slope_rad = slope * np.pi/180
 slope_sen = np.sin (slope_rad)
 
+
+##Con todo calculado, generamos LS, que es nuestro objetivo
+ ls = ( 0.4 + 1 ) * (a_e / 22.13) ** 0.4 * (slope_sen / 0.896) ** 1
+
+
