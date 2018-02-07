@@ -34,7 +34,13 @@ gdal.DEMProcessing('aspect.tif', 'fill_mde.tif', 'aspect')
 aspect = fn.cargar_raster('aspect.tif') 
 aspect_rad = aspect * np.pi/180
 
+#Calculamos los demas valores para calcular b
 
+aspect_sen = np.sin(aspect_rad)
+aspect_cos = np.cos(aspect_rad)
+
+aspect_sen_pos = np.abs (aspect_sen) #Al querer solo valores positivos
+aspect_cos_pos = np.abs (aspect_cos)
 
 
 
